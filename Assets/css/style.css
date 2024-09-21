@@ -1,0 +1,139 @@
+/*   font-family: "Montserrat", sans-serif;
+ */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*   font-family: "Roboto Slab", serif;
+ */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    font-family: "Montserrat", sans-serif;
+
+}
+
+li {
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+p {
+    font-family: "Roboto Slab", serif;
+
+}
+
+:root {
+    --main-color: #ffc800;
+}
+
+.container {
+    margin: auto;
+    width: 80%;
+    height: 100%;
+}
+
+/* header */
+header {
+    background-image: url(../images/header-bg.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position-y: -100px;
+
+}
+
+/* navbar */
+.nav {
+    height: 10%;
+    padding-top: 30px;
+}
+
+.nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoImg img {
+    width: 200px;
+}
+
+.linkes {
+    width: 40%;
+}
+
+.linkes ul {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.linkes a {
+    Font-size: 15.2px;
+    Font-weight: 400;
+    Line-height: 22.8px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+
+.linkes a:hover {
+    color: var(--main-color);
+}
+
+/* header-content */
+.header-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+    color: #fff;
+    padding-top: 150px;
+}
+
+.header-content p {
+    Font-size: 36px;
+    Font-weight: 400;
+    Line-height: 36px;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.header-content h1 {
+    Font-size: 72px;
+    Font-weight: 700;
+    Line-height: 72px;
+    margin-bottom: 70px;
+    text-transform: uppercase;
+}
+
+.header-content a {
+    padding: 20px 40px;
+    Font-size: 18px;
+    Font-weight: 700;
+    Line-height: 27px;
+    background-color: var(--main-color);
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.header-content a:hover {
+    background-color: #a18008;
+}
