@@ -33,7 +33,9 @@ a {
     color: #fff;
 }
 
-p {
+p,
+input::placeholder,
+textarea::placeholder {
     font-family: "Roboto Slab", serif;
 
 }
@@ -209,18 +211,21 @@ header {
 }
 
 /* portfolio */
-.portfolio {
+.portfolio,
+.Team {
     text-align: center;
     background-color: #f8f9fa;
     padding-top: 50px;
-    height: 150vh;
+    height: 145vh;
 }
 
 .portfolio .container {
     width: 90%;
 }
 
-.portfolio h2 {
+.portfolio h2,
+.Team h2,
+.Content h2 {
     Font-size: 40px;
     Font-weight: 700;
     Line-height: 48px;
@@ -229,7 +234,9 @@ header {
     margin-bottom: 20px;
 }
 
-.portfolio p {
+.portfolio p,
+.Team p,
+.Content p {
     Font-size: 16px;
     Font-weight: 400;
     Line-height: 19.2px;
@@ -269,10 +276,9 @@ header {
     transition: 0.5s;
 }
 
-.portfolio .works .work .image:hover::before {
-    content: "+";
+.portfolio .works .work .image::before {
+    content: " ";
     color: #f8f9fa;
-    background-color: var(--main-color);
     position: absolute;
     width: 100%;
     height: 100%;
@@ -280,9 +286,157 @@ header {
     font-weight: bold;
     align-content: center;
     cursor: pointer;
-    transition: 5s;
+    transition: 0.4s;
+}
+
+.portfolio .works .work .image:hover::before {
+    content: "+";
+    background-color: var(--main-color);
 }
 
 .portfolio .works .work .img img {
     height: 73%;
+}
+
+/* Team */
+.Team {
+    height: 100vh;
+
+}
+
+.Team .container,
+.Content .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Team .pepole {
+    display: flex;
+}
+
+.Team .pepole .pepoleMini {
+    width: 32%;
+    margin: 5px;
+}
+
+.Team .pepole .pepoleMini img {
+    width: 60%;
+    border: 0.5rem solid rgba(0, 0, 0, 0.1);
+    border-radius: 100%;
+}
+
+.Team .pepole .pepoleMini h3 {
+    Font-size: 22.416px;
+    Font-weight: 700;
+    Line-height: 26.8992px;
+    padding-top: 20px;
+}
+
+.Team .pepole .pepoleMini p {
+    Font-size: 16px;
+    Font-weight: 400;
+    Line-height: 28px;
+    padding-top: 5px;
+    font-style: normal;
+    margin-bottom: 15px;
+}
+
+.Team .pepole .pepoleMini .icons i {
+    Font-size: 18px;
+    Font-weight: 400;
+    Line-height: 28px;
+    color: white;
+    background-color: #212529;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 100%;
+    margin: 5px;
+    margin-bottom: 30px;
+    transition: 0.5s;
+
+}
+
+.Team .pepole .pepoleMini .icons i:hover {
+    background-color: #686868;
+    cursor: pointer;
+}
+
+.Team .Team-footer {
+    width: 70%;
+    margin-top: 30px;
+    font-size: large;
+}
+
+.Team .Team-footer p {
+    font-style: normal;
+}
+
+/* Content */
+.Content {
+    background-color: #212529;
+    background-image: url(../images/content/map-image.png);
+    height: 90vh;
+}
+
+.Content h2 {
+    color: #fff;
+    padding-top: 40px;
+}
+
+.Content form {
+    display: flex;
+    width: 100%;
+}
+
+.Content form .inputsInner {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 10px;
+}
+
+.Content form .inputsInner input,
+textarea {
+    padding: 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.Content form .inputsInner input:focus,
+textarea:focus {
+    box-shadow: none;
+    border: 1px solid var(--main-color);
+    border-color: var(--main-color);
+}
+
+.Content form .inputsInner input::placeholder,
+textarea::placeholder {
+    Font-weight: bolder;
+    Line-height: 24px;
+    color: rgb(171, 172, 174);
+}
+
+.Content form .inputsInner textarea {
+    height: 100%;
+    border-radius: 10px;
+}
+
+.Content .button {
+    padding: 20px 40px;
+    Font-size: 18px;
+    Font-weight: 700;
+    Line-height: 27px;
+    background-color: var(--main-color);
+    border-radius: 10px;
+    transition: 0.3s;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 30px;
+}
+
+.Content .button:hover {
+    background-color: #a18008;
 }
