@@ -440,3 +440,56 @@ textarea::placeholder {
 .Content .button:hover {
     background-color: #a18008;
 }
+
+/* footer */
+.Footer {
+    height: 10vh;
+}
+
+.Footer .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    width: 90%;
+    margin-bottom: 15px;
+}
+
+.Footer .container .cpoyRight {
+    Font-size: 16px;
+    Font-weight: 400;
+    Line-height: 21.6px;
+    color: rgb(136, 136, 140);
+}
+
+.Footer .container .privacyTerms {
+    display: flex;
+    gap: 20px;
+    Font-size: 15px;
+    Font-weight: 400;
+    Line-height: 21.6px;
+}
+
+.Footer .container .privacyTerms a {
+    color: rgb(116, 116, 118);
+}
+
+.Footer .container .footerIcons i {
+    Font-size: 18px;
+    Font-weight: 400;
+    Line-height: 28px;
+    color: white;
+    background-color: #212529;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+    transition: 0.5s;
+    margin-bottom: 25px;
+}
+
+.Footer .container .footerIcons i:hover {
+    background-color: #686868;
+    cursor: pointer;
+}
