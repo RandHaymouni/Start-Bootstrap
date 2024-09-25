@@ -215,7 +215,7 @@ header {
 .Team {
     text-align: center;
     background-color: #f8f9fa;
-    padding-top: 50px;
+    padding-top: 30px;
     height: 145vh;
 }
 
@@ -230,7 +230,7 @@ header {
     Font-weight: 700;
     Line-height: 48px;
     text-transform: uppercase;
-    margin-top: 40px;
+    margin-top: 50px;
     margin-bottom: 20px;
 }
 
@@ -301,7 +301,7 @@ header {
 /* Team */
 .Team {
     height: 100vh;
-
+    padding-top: 0%;
 }
 
 .Team .container,
