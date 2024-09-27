@@ -6,6 +6,10 @@
  */
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -62,8 +66,12 @@ header {
 
 /* navbar */
 .nav {
-    height: 10%;
-    padding-top: 30px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #212529;
+    height: 9%;
     flex-wrap: wrap;
 }
 
@@ -74,7 +82,7 @@ header {
 }
 
 .logoImg img {
-    width: 200px;
+    width: 170px;
 }
 
 .linkes {
@@ -83,7 +91,7 @@ header {
 
 .linkes ul {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px;
 }
@@ -109,7 +117,7 @@ header {
     align-items: center;
     height: 70%;
     color: #fff;
-    padding-top: 150px;
+    padding-top: 250px;
     flex-wrap: wrap;
 }
 
@@ -141,18 +149,20 @@ header {
 
 .header-content a:hover {
     background-color: #a18008;
+    transform: scale(1.1);
 }
 
 /* services */
 .services {
-    padding: 90px;
+    padding: 40px;
     text-align: center;
-    height: 80%;
+    height: 87%;
     flex-wrap: wrap;
-    margin-bottom: 40px;
+    margin-bottom: 5.7px;
 }
 
 .services .container {
+    padding-top: 80px;
     width: 100%;
     flex-wrap: wrap;
 }
@@ -215,7 +225,7 @@ header {
 .Team {
     text-align: center;
     background-color: #f8f9fa;
-    padding-top: 30px;
+    padding-top: 35px;
     height: 145vh;
 }
 
@@ -301,11 +311,11 @@ header {
 /* Team */
 .Team {
     height: 100vh;
-    padding-top: 0%;
 }
 
 .Team .container,
 .Content .container {
+    padding-top: 35px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -375,6 +385,7 @@ header {
 
 /* Content */
 .Content {
+    margin-top: 50px;
     background-color: #212529;
     background-image: url(../images/content/map-image.png);
     height: 90vh;
@@ -382,7 +393,7 @@ header {
 
 .Content h2 {
     color: #fff;
-    padding-top: 40px;
+    padding-top: 10px;
 }
 
 .Content form {
@@ -449,6 +460,7 @@ textarea::placeholder {
 .Footer .container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 40px;
     width: 90%;
     margin-bottom: 15px;
@@ -486,7 +498,6 @@ textarea::placeholder {
     margin-left: 5px;
     margin-right: 5px;
     transition: 0.5s;
-    margin-bottom: 25px;
 }
 
 .Footer .container .footerIcons i:hover {
